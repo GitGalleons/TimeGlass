@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Alarm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 glass-panel">
+                <h1 id="clock" class="text-center">12:00:00 AM</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8 glass-panel">
+                <h2>Set New Alarm</h2>
+                <div class="form-inline">
+                    <input type="number" id="alarm-hour" class="form-control mr-2" placeholder="Hours" min="1" max="12">
+                    <input type="number" id="alarm-minute" class="form-control mr-2" placeholder="Minutes" min="0" max="59">
+                    <select id="alarm-ampm" class="form-control mr-2">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    <input type="text" id="alarm-label" class="form-control mr-2" placeholder="Alarm Label">
+                    <button id="set-alarm" class="btn btn-primary">Set Alarm</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8 glass-panel">
+                <h2>Active Alarms</h2>
+                <table class="table" id="alarm-list">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Label</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Alarms will be added here -->
+                    </tbody>
+                </table>
+                <button id="clear-alarms" class="btn btn-danger">Clear All Alarms</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

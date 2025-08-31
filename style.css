@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+#clock {
+    font-size: 3em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.table th,
+.table td {
+    color: white;
+}
+
+.alarm-triggered {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #clock {
+        font-size: 2em;
+    }
+}
